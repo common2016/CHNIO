@@ -1,0 +1,14 @@
+Package: CHNIO
+Title: Input Output Tables in every Province
+Version: 0.0.1
+Authors@R: 
+    person("Pu", "Chen", , "shengnehs@qq.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Provide the IO tables in every provinces in China.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
