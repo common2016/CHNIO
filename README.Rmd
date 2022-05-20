@@ -28,7 +28,7 @@ CHNIO包就是提供了中国2002,2007,2012和2017年各省投入产出表的一
 devtools::install_github('common2016/CHNIO')
 ```
 
-查看2002年江苏省的数据。
+查看2002年江苏省的数据。按当年生产者价格计算，单位万元。
 
 ```{r, eval=TRUE}
 library(CHNIO)
