@@ -30,15 +30,15 @@ devtools::install_github('common2016/CHNIO')
 
 查看2005年江苏省的数据。
 
-```{r, eval=FALSE}
+```{r, eval=TRUE}
 library(CHNIO)
-data("io2005")
-head(io2005[['江苏']])
+data("io2002")
+io2002[['江苏']][1:5,1:6]
 ```
 
 你也可以看看原始数据长啥样。如下代码给出了北京的投入产出表的存储路径。
 
-```{r, eval=FALSE}
+```{r, eval=TRUE}
 system.file('extdata','北京2002.xls', package = 'CHNIO')
 ```
 
