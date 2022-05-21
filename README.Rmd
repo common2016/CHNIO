@@ -134,3 +134,10 @@ system.file('extdata','北京2002.xls', package = 'CHNIO')
 最终使用|进口|IM	
 最终使用|国内省外流入|IF
 
+## 3.4 也可以用代码查看
+
+```{r}
+data("secnames")
+head(secnames)
+```
+
