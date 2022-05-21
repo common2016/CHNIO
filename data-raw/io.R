@@ -36,7 +36,7 @@ secnames <- data.frame(nm = c('流出','流入','其他'),code = c('FU302','FU30
 secnames <- data.frame(nm = c('出口','国内省外流出','进口','国内省外流入'),code = c('EX','OF','IM','IF'),year02 = NA,
                        year07 = NA, year12 = 2012, year17 = 2017) %>% rbind(secnames, .)
 secnames$nm <- str_remove_all(secnames$nm,'\n')
-
+secnames[secnames$code %in% 'NOF',c('year07','year12','year17')] <- NA
 # usethis::use_data(secnames, overwrite = TRUE)
 
 # 2002
@@ -44,6 +44,7 @@ io2002 <- getio('2002年各省份投入产出表')
 
 # 2007
 io2007 <- getio('2007年各省份投入产出表', rows = 8:57)
+io2007[['安徽']]$FU202 <- as.numeric(io2007[['安徽']]$FU202)
 
 # 2012
 io2012 <- getio('2012年各省份投入产出表', rows = 9:58, cols = 3:61)
